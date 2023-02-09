@@ -1,0 +1,17 @@
+.Range-bar .ruler{
+    display: none;
+    
+}
+.Range-bar .label{
+    display: none;
+ 
+}
+.Range-bar .multi-range-slider{
+    border: none !important;
+}
+
+.Range-bar .multi-range-slider .thumb .caption *{
+ background-color: rgb(32, 32, 32) !important;
+ 
+}
+

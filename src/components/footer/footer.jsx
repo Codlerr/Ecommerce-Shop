@@ -1,5 +1,8 @@
 import React from 'react'
 
+let icon1 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1675942451/Ecommers-shop/original_c0mcqb.png';
+let icon2 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1675942450/Ecommers-shop/days_ipz7s6.png';
+
 function footer() {
   return (
     <>
@@ -25,14 +28,20 @@ function footer() {
                     <li><a href="/">My account</a></li>
                 </ul>
               </div>
-              <div className='w-full h-full grid col-span-2 md:place-content-center'>
-                <div>
-                  <p className='text-2xl font-normal'>100% ORIGINAL</p>
-                  <p className='font-light'>guarantee for all products</p>
+              <div className='w-full h-full grid gap-y-5 col-span-2 md:place-content-center'>
+                <div className='flex gap-5'>
+                  <img className='h-16' src={icon1} alt="icon" />
+                  <div>
+                    <p className='text-2xl font-normal'>100% ORIGINAL</p>
+                    <p className='font-light'>guarantee for all products</p>
+                  </div>
                 </div>
+                <div className='flex gap-8'>
+                <img className='h-16' src={icon2} alt="icon" />
                 <div>
                   <p className='text-2xl font-normal'>Return within 30days</p>
                   <p className='font-light'>of receiving your order</p>
+                </div>  
                 </div>
               </div>
         </div>

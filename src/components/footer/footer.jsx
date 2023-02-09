@@ -2,6 +2,10 @@ import React from 'react'
 
 let icon1 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1675942451/Ecommers-shop/original_c0mcqb.png';
 let icon2 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1675942450/Ecommers-shop/days_ipz7s6.png';
+let logo1 ='https://res.cloudinary.com/dfoqi8rjf/image/upload/v1675943315/Ecommerce-shop/visa_aenfeu.png';
+let logo2 ='https://res.cloudinary.com/dfoqi8rjf/image/upload/v1675943315/Ecommerce-shop/master_rvb1kp.png';
+let logo4 ='https://res.cloudinary.com/dfoqi8rjf/image/upload/v1675943315/Ecommerce-shop/gpay_ss5egt.png';
+
 
 function footer() {
   return (
@@ -30,16 +34,16 @@ function footer() {
               </div>
               <div className='w-full h-full grid gap-y-5 col-span-2 md:place-content-center'>
                 <div className='flex gap-5'>
-                  <img className='h-16' src={icon1} alt="icon" />
+                  <img className='xs:h-14 md:h-10 lg:h-16' src={icon1} alt="icon" />
                   <div>
-                    <p className='text-2xl font-normal'>100% ORIGINAL</p>
+                    <p className='md:text-base lg:text-2xl font-normal'>100% ORIGINAL</p>
                     <p className='font-light'>guarantee for all products</p>
                   </div>
                 </div>
                 <div className='flex gap-8'>
-                <img className='h-16' src={icon2} alt="icon" />
+                <img className='xs:h-14 md:h-10 lg:h-16' src={icon2} alt="icon" />
                 <div>
-                  <p className='text-2xl font-normal'>Return within 30days</p>
+                  <p className='md:text-base lg:text-2xl font-normal'>Return within 30days</p>
                   <p className='font-light'>of receiving your order</p>
                 </div>  
                 </div>
@@ -68,8 +72,10 @@ function footer() {
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-twitter"></i>
         </div>
-        <div>
-          <p>Logos</p>
+        <div className='flex gap-3'>
+          <img className='object-cover h-10' src={logo1} alt="logo" />
+          <img className='object-cover h-10' src={logo2} alt="logo" />
+          <img className='object-cover h-10' src={logo4} alt="logo" />
         </div>
       </div>
     </section>

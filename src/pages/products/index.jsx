@@ -8,7 +8,7 @@ let sale = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1675930874/Ecomme
 function products() {
   return (
     <>
-      <section className='p-5 grid grid-cols-1 md:grid-cols-4 gap-5'>
+      <section className='p-5 flex xs:flex-col-reverse md:flex-row flex-1 gap-5'>
         {/* FILTER */}
           <div className='flex flex-col gap-5'>
            <img className='rounded-2xl object-cover' src={Offer} alt="offer" />
@@ -32,7 +32,7 @@ function products() {
           </div>
 
           {/* Products */}
-          <div className='md:col-span-3 md:pb-40'>
+          <div className='md:flex flex-3 flex-col md:pb-40'>
             {/* head */}
             <div>
               <div className='text-lg md:pb-5'>
@@ -51,7 +51,7 @@ function products() {
             </div>
 
             {/* items */}
-              <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10'>
                     {Products.map((item,i) =>
                     <div key={i}>
                         <div className='relative'>

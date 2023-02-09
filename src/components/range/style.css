@@ -8,6 +8,7 @@
 }
 .Range-bar .multi-range-slider{
     border: none !important;
+    box-shadow: none !important;
 }
 
 .Range-bar .multi-range-slider .thumb .caption *{

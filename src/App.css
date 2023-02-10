@@ -23,4 +23,10 @@ a:visited {
   text-decoration: none;
 }
 
+/* Product-inner page */
+.product-inner ::-webkit-scrollbar {
+  display: none;
+}
+/* Product-inner page */
+
 

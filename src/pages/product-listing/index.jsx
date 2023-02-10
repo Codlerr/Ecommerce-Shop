@@ -67,12 +67,7 @@ function products() {
                     </div>
                         )}
 
-                    
-                    
-                    
-                    
-                    
-                    
+  
                     
               </div>
           </div>

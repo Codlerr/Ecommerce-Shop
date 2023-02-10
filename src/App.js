@@ -7,8 +7,10 @@ import {
 
 import Header from './components/navbar/navbar';
 import Footer from './components/footer/footer';
+import PNF from './pages/404'
 import Home from './pages/home'
-import Products from './pages/products'
+import Products from './pages/product-listing'
+import ProductPage from './pages/product-page'
 
 const Layout = () => {
   return(
@@ -31,8 +33,16 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
-        path:"/products",
+        path:"*",
+        element:<PNF/>
+      },
+      {
+        path:"/product-listing",
         element:<Products/>
+      },
+      {
+        path:"/product-page",
+        element:<ProductPage/>
       },
       
     ]

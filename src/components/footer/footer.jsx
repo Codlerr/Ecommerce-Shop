@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {useLocation} from 'react-router-dom';
 
 let icon1 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1675942451/Ecommers-shop/original_c0mcqb.png';
 let icon2 ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1675942450/Ecommers-shop/days_ipz7s6.png';
@@ -7,7 +8,13 @@ let logo2 ='https://res.cloudinary.com/dfoqi8rjf/image/upload/v1675943315/Ecomme
 let logo4 ='https://res.cloudinary.com/dfoqi8rjf/image/upload/v1675943315/Ecommerce-shop/gpay_ss5egt.png';
 
 
-function footer() {
+function Footer() {
+
+     // custom hide
+     const { pathname } = useLocation();
+     if (pathname === "/cart") return null;
+     if (pathname === "/login") return null;
+
   return (
     <>
     <section className='bg-black text-white h-full py-10'>
@@ -83,4 +90,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer

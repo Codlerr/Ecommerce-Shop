@@ -1,11 +1,16 @@
 import React from 'react'
 import {Products} from '../../components/constant';
-import RangeBar from '../../components/range'
+import RangeBar from '../../components/range';
+import { useNavigate } from "react-router-dom";
 
 let Offer = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1675926322/Ecommers-shop/off_dvqfpi.jpg'
 let sale = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1675930874/Ecommers-shop/sale_vtf7oy.png'
 
-function products() {
+function ProductListing() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/product-page");
+  }
   return (
     <>
       <section className='p-5 flex xs:flex-col-reverse md:flex-row flex-1 gap-5'>
@@ -53,8 +58,8 @@ function products() {
             {/* items */}
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10'>
                     {Products.map((item,i) =>
-                    <div key={i}>
-                        <div className='relative'>
+                    <div key={i} onClick={handleClick}>
+                        <div className='relative cursor-pointer'>
                           <img className='rounded-t-3xl' src={item.img} alt="product" />
                           <i class="absolute top-5 right-5 text-white fa-regular fa-heart"></i>
                         </div>
@@ -76,4 +81,4 @@ function products() {
   )
 }
 
-export default products
+export default ProductListing

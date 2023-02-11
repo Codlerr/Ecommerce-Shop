@@ -7,10 +7,12 @@ import {
 
 import Header from './components/navbar/navbar';
 import Footer from './components/footer/footer';
-import PNF from './pages/404'
-import Home from './pages/home'
-import Products from './pages/product-listing'
-import ProductPage from './pages/product-page'
+import PNF from './pages/404';
+// import Home from './pages/home'
+import Products from './pages/product-listing';
+import ProductPage from './pages/product-page';
+import Cart from './pages/cart';
+import Login from './pages/login';
 
 const Layout = () => {
   return(
@@ -30,7 +32,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home/>
+        // element:<Home/>
+        element:<Products/>
       },
       {
         path:"*",
@@ -43,6 +46,14 @@ const router = createBrowserRouter([
       {
         path:"/product-page",
         element:<ProductPage/>
+      },
+      {
+        path:"/cart",
+        element:<Cart/>
+      },
+      {
+        path:"/login",
+        element:<Login/>
       },
       
     ]

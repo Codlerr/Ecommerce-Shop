@@ -21,7 +21,7 @@ function Navbar() {
       </div>
       <div>
         <ul className='flex gap-8 text-2xl'>
-          <li><NavLink><i class="fa-regular fa-user"></i></NavLink></li>
+          <li><NavLink to="/login"><i class="fa-regular fa-user"></i></NavLink></li>
           <li><NavLink><i class="fa-regular fa-heart"></i></NavLink></li>
           <li><NavLink to="/cart"><i class="fa-solid fa-cart-shopping"></i></NavLink></li>
         </ul>

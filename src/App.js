@@ -13,6 +13,10 @@ import Products from './pages/product-listing';
 import ProductPage from './pages/product-page';
 import Cart from './pages/cart';
 import Login from './pages/login';
+import OrderAdd from './pages/order-address';
+import Account from './pages/Account';
+import Wishlist from './pages/Wishlist';
+import Payment from './pages/Payment';
 
 const Layout = () => {
   return(
@@ -54,6 +58,22 @@ const router = createBrowserRouter([
       {
         path:"/login",
         element:<Login/>
+      },
+      {
+        path:"/order-address",
+        element:<OrderAdd/>
+      },
+      {
+        path:"/account",
+        element:<Account/>
+      },
+      {
+        path:"/wishlist",
+        element:<Wishlist/>
+      },
+      {
+        path:"/payment",
+        element:<Payment/>
       },
       
     ]

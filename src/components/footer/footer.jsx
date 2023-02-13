@@ -14,6 +14,7 @@ function Footer() {
      const { pathname } = useLocation();
      if (pathname === "/cart") return null;
      if (pathname === "/login") return null;
+     if (pathname === "/order-address") return null;
 
   return (
     <>

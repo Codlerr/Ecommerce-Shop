@@ -16,13 +16,13 @@ function Navbar() {
         <li>Footerwear</li>
       </ul>
       <div className='relative'>
-        <input className='border-2 rounded-3xl border-gray-500 w-full xs:w-[200px] lg:w-[500px] p-1.5 outline-none xs:text-xs md:text-base' type="search" placeholder='Search for Products, Brands, More....' />
-        <i class=" absolute xs:right-6 md:right-8 xs:top-0.5 md:top-1 text-xl fa-solid fa-magnifying-glass"></i>
+        <input className='border-2 rounded-3xl border-gray-500 w-full xs:w-[200px] lg:w-[500px] p-1.5 outline-none xs:text-xs lg:text-base' type="search" placeholder='Search for Products, Brands, More....' />
+        <i class=" absolute xs:right-6 md:right-8 xs:top-0.5 md:top-2 xs:text-sm lg:text-xl fa-solid fa-magnifying-glass"></i>
       </div>
       <div>
         <ul className='flex gap-8 text-2xl'>
           <li><NavLink to="/login"><i class="fa-regular fa-user"></i></NavLink></li>
-          <li><NavLink><i class="fa-regular fa-heart"></i></NavLink></li>
+          <li><NavLink to="/wishlist"><i class="fa-regular fa-heart"></i></NavLink></li>
           <li><NavLink to="/cart"><i class="fa-solid fa-cart-shopping"></i></NavLink></li>
         </ul>
       </div>

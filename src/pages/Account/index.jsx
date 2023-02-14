@@ -7,7 +7,7 @@ function Account() {
     <>
     <section className='xs:w-10/12 lg:w-8/12 mx-auto'>
         <div className='grid grid-cols-1 xs:gap-10 md:gap-5 lg:gap-10 md:grid-cols-4 py-10'>
-            <div className='border-2 rounded-xl px-3 relative overflow-hidden'>
+            <div className='border-2 rounded-xl px-5 relative overflow-hidden'>
                 <h3 className='pt-3 font-medium text-lg'>Account</h3>
                 <p className='text-base'>Jane doe</p>
                 <hr className='my-2' />

@@ -17,6 +17,8 @@ import OrderAdd from './pages/order-address';
 import Account from './pages/Account';
 import Wishlist from './pages/Wishlist';
 import Payment from './pages/Payment';
+import EditProfile from './pages/edit-profile';
+import AllOrders from './pages/all-orders';
 
 const Layout = () => {
   return(
@@ -74,6 +76,14 @@ const router = createBrowserRouter([
       {
         path:"/payment",
         element:<Payment/>
+      },
+      {
+        path:"/edit-profile",
+        element:<EditProfile/>
+      },
+      {
+        path:"/all-orders",
+        element:<AllOrders/>
       },
       
     ]
